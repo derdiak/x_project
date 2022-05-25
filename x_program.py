@@ -14,6 +14,7 @@ main_layout = QHBoxLayout()
 
 left_layout   = QVBoxLayout()
 center_layout = QVBoxLayout()
+right_layout = QVBoxLayout()
 
 left_button = QPushButton('Левая кнопка')       # кнопки не умеют растягиваться в высоту,
 left_label = QLabel('Левый текст')              # поэтому label захватил всё свободное пространство
@@ -25,16 +26,15 @@ center_layout.addWidget(center_label)           # то он захватил в�
 
 right_button = QPushButton('Правая кнопка')
 
+right_layout.addWidget(right_button)           # то он захватил всё пространство своего родителя - лэйаута center_layout
+
 # # в главный горизонтальный лэйаут вставляем 3 вертикальных
 main_layout.addLayout(left_layout)
 main_layout.addLayout(center_layout)
+main_layout.addLayout(right_layout)
 
 window.setLayout(main_layout)
 
-left_button.setStyleSheet('background: red')
-left_label.setStyleSheet('background: blue')
-center_label.setStyleSheet('background: green')
-right_button.setStyleSheet('background: brown')
 
 window.show()
 app.exec_()
