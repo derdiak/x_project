@@ -10,7 +10,6 @@ window.setWindowTitle('Тест')
 window.move(0, 100)
 window.resize(1000, 500)
 
-
 main_layout = QHBoxLayout()
 
 left_layout   = QVBoxLayout()
@@ -35,7 +34,6 @@ main_layout.addLayout(center_layout)
 main_layout.addLayout(right_layout)
 
 window.setLayout(main_layout)
-
 
 window.show()
 app.exec_()
