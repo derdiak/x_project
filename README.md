@@ -6,3 +6,8 @@ My genius project!
 #### H4
 ##### H5
 ###### H6
+
+```python
+s = "Подсветка Python"
+print s
+```
