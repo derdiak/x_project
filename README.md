@@ -21,5 +21,5 @@ print(s)
 Для зачеркнутого текста используются две тильды . ~~Уберите это.~~
 
 
-sadfsda safsafs sadfsdafsad.
+sadfsda safsafs sadfsdafsad.  
 sfdafsad
